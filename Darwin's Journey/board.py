@@ -1,20 +1,15 @@
-class Board(object):
+class Board():
+    # Contains all playable locations
+
     def __init__(self):
-        self.board = {"island1":[],
-                      "island2":[],
-                      "island3":[],
-                      "sea":[],
-
-                      "wax":[],
-                      "fossil":[],
-                      "turn order":[],
-                      "achievement":[],
-                      "envelope":[],
-
-                      "green":[],
-                      "blue":[],
-                      "yellow":[],
-                      "red":[],
-                      "extra":[],
-                      "lens":[]
+        self.location = {
                       }
+
+    def get_location(self, location_id):
+        # return location detail for the given location id
+        return None
+
+    def reset_round(self):
+        # clears worker placements if needed
+        return None
+
