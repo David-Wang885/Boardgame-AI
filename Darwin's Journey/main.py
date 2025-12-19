@@ -11,3 +11,4 @@ while not game.is_game_over():
     game.apply_action(player, action)
 
 game.score_game()
+
