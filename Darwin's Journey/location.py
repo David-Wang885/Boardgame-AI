@@ -3,16 +3,13 @@ class Location():
 
     def __init__(self):
         self.id = ""
-        self.capacity = 1
+        self.sharable = False
         self.workers = []
         self.reward_coins = 0
         self.reward_vp = 0
 
-    def is_full(self):
-        pass
-
     def can_place(self, worker):
-        pass
+        return self.sharable or len(self.workers) == 0
 
     def place_worker(self, worker):
         pass
@@ -21,5 +18,5 @@ class Location():
         pass
 
     def clear(self):
-        pass
+        self.workers = []
 
